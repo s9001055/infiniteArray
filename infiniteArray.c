@@ -21,7 +21,7 @@ int delElement(int *ary, int index)
 
 int addElement(int *ary, int key, int index)
 {
-	if (++index == (sizeof(ary) / sizeof(int))){
+	if (index == (sizeof(ary) / sizeof(int))){
 		int newIndex = index << 1;
 		int  *newAry = malloc(sizeof(int) * newIndex);
 		int i;
